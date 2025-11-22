@@ -1,0 +1,18 @@
+* {
+    background-image: linear-gradient(to right, rgb(17, 23, 49), rgb(78, 94, 99));
+    border-radius: 10px;
+}
+div {
+    text-align: center;
+    color :aliceblue;
+    font-style:italic;
+}
+.Sn {
+    color: wheat;
+    text-align:right;
+    margin-right: 300px;
+}
+.tex {
+    text-align: center;
+    color:rgb(129, 129, 129)
+}
