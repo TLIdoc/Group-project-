@@ -1,0 +1,153 @@
+
+    /* Базовые стили для сброса и шрифтов */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #fff; /* Белый фон */
+        color: #000;
+        margin: 0;
+        padding: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    /* Секция заголовка "Videos 31 ❯" */
+    .section-title {
+        display: flex;
+        align-items: center;
+        font-size: 1.5em;
+        margin-bottom: 15px;
+        font-weight: bold;
+        border-left: 3px solid #fcc419; /* Желтая полоса слева */
+        padding-left: 8px;
+    }
+
+    .video-count {
+        font-size: 0.8em;
+        color: #555;
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+
+    .arrow-icon {
+        font-size: 1em;
+        color: #555;
+    }
+
+    /* Сетка для видео-элементов */
+    .video-grid {
+        display: grid;
+        /* Создаем 4 колонки. Первые два элемента будут занимать по 2 колонки,
+           остальные будут располагаться в 4-колоночной сетке ниже. */
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px; /* Промежуток между элементами */
+    }
+
+    /* Общие стили для элемента видео */
+    .video-item {
+        display: block;
+    }
+
+    .thumbnail-container {
+        position: relative;
+        padding-top: 56.25%; /* Соотношение сторон 16:9 */
+        background-color: #333;
+        border-radius: 6px;
+        overflow: hidden;
+        /* Изображения для примера (замените на свои) */
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* Фоновые изображения для примера */
+    .video-item:nth-child(1) .thumbnail-container {
+        background-image: url('https://i.imgur.com/vH1lH1v.jpeg'); /* Image of Interstellar space suit */
+    }
+    .video-item:nth-child(2) .thumbnail-container {
+        background-image: url('https://i.imgur.com/qLhQzHw.jpeg'); /* Image of Interstellar car scene */
+    }
+    .video-item:nth-child(3) .thumbnail-container {
+        background-image: url('https://i.imgur.com/qLhQzHw.jpeg');
+    }
+    .video-item:nth-child(4) .thumbnail-container {
+        background-image: url('https://i.imgur.com/qLhQzHw.jpeg');
+    }
+    .video-item:nth-child(5) .thumbnail-container {
+        background-image: url('https://i.imgur.com/qLhQzHw.jpeg');
+    }
+    .video-item:nth-child(6) .thumbnail-container {
+        background-image: url('https://i.imgur.com/gK9qJ9Y.jpeg'); /* Collaged image */
+        background-size: cover;
+    }
+
+
+    /* Наложение с иконкой Play и продолжительностью */
+    .play-overlay {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        display: flex;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 4px;
+        padding: 2px 6px;
+        color: #fff;
+        font-size: 0.8em;
+    }
+
+    .play-icon {
+        font-size: 0.9em;
+        margin-right: 5px;
+    }
+
+    /* Стиль для клипа с отдельным лейблом */
+    .special-item .play-overlay {
+        display: none; /* Скрываем стандартный оверлей */
+    }
+
+    .clip-label {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #000;
+        color: #fff;
+        font-weight: bold;
+        padding: 3px 6px;
+        border-radius: 3px;
+        font-size: 0.7em;
+    }
+
+    /* Заголовок видео */
+    .video-title {
+        margin: 8px 0 4px 0;
+        font-size: 0.9em;
+        font-weight: bold;
+    }
+
+    /* Статистика (лайки, просмотры/реакции) */
+    .video-stats {
+        font-size: 0.8em;
+        color: #555;
+    }
+
+    .video-stats span {
+        margin-right: 10px;
+    }
+    
+    .large-item {
+        grid-column: span 2; 
+    }
+
+
+    .small-item {
+        grid-column: span 1; 
+    }
+
+    .hearts {
+        color: #ff4081; 
+    }
+    .likes {
+        color: #555; 
+    }
